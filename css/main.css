@@ -4,11 +4,11 @@ html{
 
 body {
     font-family: 'Karla', sans-serif;
-    background-color: #f3f0e9;
+    width: 100%;
     color: #000;
     margin: 0;
+    background-color: #f3f0e9;
     padding: 0;
-    width: 100%;
     overflow-x: hidden;
 }
 
@@ -21,12 +21,12 @@ a {
 
 .skip-link {
     position: absolute;
+    color: #fff;
+    background: #000;
     top: -40px;
     left: 0;
-    background: #000;
-    color: #fff;
-    padding: 8px;
     z-index: 100;
+    padding: 8px;
 }
 
 .skip-link:focus {
@@ -63,11 +63,12 @@ section {
 }
 
 /* Header and Navigation */
+
 header {
-    width: 100%;
-    color: #fff;
     background-color: #000;
+    color: #fff;
     padding-right: 50px;
+    width: 100%;
 }
 
 
@@ -77,17 +78,17 @@ header {
 }
 
 .header div {
-    padding: 5px;
-    display: flex;
     justify-content: center;
+    display: flex;
+    padding: 5px;
 }
 
 .header div ul {
-    list-style: none;
-    padding: 0;
-    font-size: 20px;
     display: flex;
+    padding: 0;
     justify-content: center;
+    list-style: none;
+    font-size: 20px;
     gap: 20px;
 }
 
@@ -97,59 +98,61 @@ header {
 
 /* Navigation Links */
 nav a {
-    font-family: 'Lato', sans-serif;
     color: #fff;
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
+    font-weight: 700;
 }
 
 /* Hero Section */
 .intro {
+    background: url('../images/hero-background.jpg') no-repeat center center/cover;
     position: relative;
+    overflow: hidden;
     width: 100%;
     height: 600px;
-    background: url('../images/hero-background.jpg') no-repeat center center/cover;
-    overflow: hidden;
 }
 
 .intro h1 {
-    font-weight: bolder;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .intro_item {
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
     display: flex;
+    background: rgba(0, 0, 0, 0.4);
     justify-content: center;
     align-items: center;
-    text-align: center;
+    height: 100%;
+    width: 100%;
     color: white;
+    text-align: center;
 }
-
+    
 .intro-container {
     max-width: 400px;
 }
 
 
 .greeting{
-    position: relative;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    position: relative;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .greeting-container {
-    max-width: 1200px;
-    margin: 10px;
     margin-top: 80px;
+    margin: 10px;
+    max-width: 1200px;
 }
 
 .greeting-heading {
-    text-transform: uppercase;
     max-width: 90%;
+    text-transform: uppercase;
+   
 }
 
 .greeting-heading h3 {
@@ -169,38 +172,39 @@ nav a {
 }
 
 .thumbnail-images {
-    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .featured-images img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .offerings {
-    position: relative;
-    width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: relative;
+    display: flex;
 }
+    
 
 .offerings-container {
-    max-width: 1200px;
-    margin: 10px;
     margin-top: 80px;
+    margin: 10px;
+    max-width: 1200px;
 }
 
 .offerings-heading {
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .offerings-heading h3 {
@@ -208,15 +212,14 @@ nav a {
 }
 
 .offerings-items {
-
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #offerings-item {
-    width: 384px;
     padding: 20px;
+    width: 384px;
 }
 
 #offerings-item img {
@@ -224,26 +227,28 @@ nav a {
 }
 
 .catalog {
-    position: relative;
     background: url('../images/coffee-shop.jpeg') no-repeat center center/cover;
-    margin-top: 40px;
     display: list-item;
-    justify-content: center;
+    position: relative;
+    margin-top: 40px;
     align-items: center;
     text-align: center;
+    justify-content: center; 
 }
+    
 
 .catalog-background {
     background: rgba(0, 0, 0, 0.4);
 }
 
 .catalog-container {
-    max-width: 1200px;
-    display: list-item;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    display: list-item;
+    max-width: 1200px;
 }
+    
 
 #catalog-head {
     color: #d69e3d;
@@ -263,13 +268,14 @@ nav a {
 }
 
 .locations_btn {
+    background: rgba(0, 0, 0, 0);
     margin-top: 20px;
-    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    background: rgba(0, 0, 0, 0);
-    border-color: #fff;
+    padding-top: 10px;
     color: #fff;
+    border-color: #fff;
+   
 }
 
 .story {
@@ -281,25 +287,26 @@ nav a {
 }
 
 .learn-more-button {
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
     background: #000;
     border-color: #fff;
-    color: #fff;
     width: 200px;
+    color: #fff;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
 
 .story {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+    
 
 .story-container {
-    max-width: 1200px;
     padding: 20px;
+    max-width: 1200px;
 }
 
 #story-head {
@@ -316,22 +323,22 @@ nav a {
 
 
 .reviews {
-    background: #000;
-    color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    color: #fff;
+    background: #000;
     margin-top: 80px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .reviews-container {
+    width: 100%;
     max-width: 1200px;
-    padding-top: 80px;
-    padding-bottom: 80px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .reviews-content {
@@ -339,8 +346,8 @@ nav a {
 }
 
 .reviews-content h3 {
-    color: #d69e3d;
     text-transform: uppercase;
+    color: #d69e3d;
 }
 
 .reviews-head {
@@ -353,10 +360,10 @@ nav a {
 
 /* Footer */
 footer {
-    color: #fff;
     background: #000;
-    text-align: center;
+    color: #fff;
     padding: 16px 0;
+    text-align: center;
 }
 
 
@@ -387,17 +394,17 @@ footer {
     }
 
     .header div {
-        padding: 5px;
-        display: flex;
         justify-content: center;
+        display: flex;
+        padding: 5px;
     }
 
     .header div ul {
         list-style: none;
+        justify-content: center;
+        display: flex;
         padding: 0;
         font-size: 20px;
-        display: flex;
-        justify-content: center;
         gap: 20px;
     }
 
@@ -412,23 +419,22 @@ footer {
     .featured-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 
     .offerings-items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        /* Two columns of equal width */
         grid-template-rows: auto auto;
-        margin: 20px;
         gap: 20px;
+        margin: 20px;
     }
 
     #offerings-item {
-        padding: 30px;
         grid-column: span 2;
+        padding: 30px;
     }
 
     #offerings-item:last-child {
@@ -437,39 +443,39 @@ footer {
 
     .catalog {
         display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .catalog-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-    }
+        justify-content: center;
+        align-items: center;  
+     }
 
     #catalog-content {
-        padding-right: 40px;
-        padding-left: 40px;
         padding-top: 80px;
         padding-bottom: 80px;
-
+        padding-right: 40px;
+        padding-left: 40px;
+        
     }
 
     .story-container {
-        padding: 20px;
         display: grid;
         grid-template-columns: repeat(2, 2fr);
-        gap: 28px;
-        text-align: left;
+        padding: 20px;
         justify-content: center;
         align-content: center;
+        text-align: left;
+        gap: 28px;
     }
 
     .story img {
-        max-width: 100%;
         height: 100%;
+        max-width: 100%;
     }
 
     #story-content {
@@ -481,9 +487,9 @@ footer {
     }
 
     .reviews-content {
-        display: flex;
         justify-content: center;
         align-content: center;
+        display: flex;
         gap: 20px;
     }
 
@@ -514,8 +520,8 @@ footer {
 
     #logo {
         display: flex;
-        justify-content: center;
-        align-items: center;
+       align-items: center;
+       justify-content: center;
     }
     
     .navigation div {
@@ -523,11 +529,11 @@ footer {
     }
 
     .navigation div ul {
+        display: flex;
         list-style: none;
-        padding: 0;
         justify-content: center;
         font-size: 5px;
-        display: flex;
+        padding: 0;
         gap: 20px;
     }
 
@@ -543,13 +549,13 @@ footer {
 
     .story-items {
         display: flex;
-        margin: 20px;
         gap: 20px;
+        margin: 20px;
     }
 
     #story-item {
-        width: 30%;
         padding: 28px;
+        width: 30%;
     }
 
     .learnMore-more-button {
